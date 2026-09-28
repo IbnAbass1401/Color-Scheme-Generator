@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Scheme Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <header class="controls">
+            <input 
+                type="color" 
+                id="color-picker" 
+                value="#F55A5A"
+                aria-label="Choose seed color"
+            >
+            <select id="mode">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-complement</option>
+                <option value="triad">Triad</option>
+            </select>
+            <button id="get-scheme-btn">
+                Get color scheme
+            </button>
+            <button id="theme-btn" class="theme-btn" aria-label="Toggle dark mode">
+                🌙
+            </button>
+        </header>
+        <section id="color-container" class="color-container">
+        </section>
+    </main>
+    <div id="toast" class="toast">
+        Copied!
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
