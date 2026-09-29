@@ -86,15 +86,18 @@ function showToast() {
 /* ---------------- DARK MODE ---------------- */
 
 themeBtn.addEventListener("click", () => {
-
     document.body.classList.toggle("dark")
 
     if (document.body.classList.contains("dark")) {
-        themeBtn.textContent = "☀️"
+        themeBtn.innerHTML = '<i data-lucide="sun"></i>'
     } else {
-        themeBtn.textContent = "🌙"
+        themeBtn.innerHTML = '<i data-lucide="moon"></i>'
     }
+
+    lucide.createIcons()
 })
+
+lucide.createIcons()
 
 
 /* ---------------- INITIAL COLOR SCHEME ---------------- */

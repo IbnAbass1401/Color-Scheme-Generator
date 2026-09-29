@@ -72,8 +72,16 @@ button:hover {
 
 .theme-btn {
     width: 40px;
+    height: 40px;
     padding: 0;
-    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-btn svg {
+    width: 18px;
+    height: 18px;
 }
 
 
