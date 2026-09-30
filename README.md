@@ -2,7 +2,7 @@
 
 A responsive color scheme generator built with HTML, CSS, and JavaScript. It uses the Color API to generate color palettes based on a selected seed color and color scheme mode.
 
-# Live Website
+## Live Website
 
 [View Project](https://color-scheme-generator-umber.vercel.app/)
 
